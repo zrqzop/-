@@ -39,7 +39,7 @@ TTCTGTTTGTAATTCTTT
 ```
 ## PCG表格生成.py
 程序运行时会读取`doc.txt`文件，内容为整理好的线粒体基因组中的13个蛋白质编码基因，快速生成统计表。
-`doc.txt`的实例内容如下：
+`doc.txt`的示例内容如下：
 ```
 >ND2_252:1269_1018_+_ATT_T
 ATTTTATTAAATCCGTCGCGACTTTTATTTTTAATTACCCTTATTTTAGGAACTTTATTTTCAATCTCTGCTTCATCTTGATTTGGAGCTTGAGCAGGTT
@@ -67,12 +67,12 @@ ND2	+	252	1269	1018	ATT	T
 
 ## 核苷酸组分.py
 程序运行时会读取`doc.txt`文件，该文件的内容为fasta格式的序列文件。
-统计一条序列的长度，碱基组分，AT-skew和GC-skew。若`doc.txt`文件中包含多条序列，则会将多序列串联后的结果。
+统计一条序列的长度，碱基组分，AT-skew和GC-skew。若`doc.txt`文件中包含多条序列，则会统计多序列串联后的结果。
 
 ## 去除终止密码子.py
 程序运行时会读取`example.fasta`文件，该文件的内容为fasta格式的序列文件。
 删除蛋白质编码序列中的终止密码子，支持多序列。
 
  ## RSCU计算.py
- 读取`example.fasta`文件，该文件的内容为去除终止密码子的蛋白质编码基因。
+ 读取`example.fasta`文件，该文件的内容为去除终止密码子后的13个蛋白质编码基因。
  
